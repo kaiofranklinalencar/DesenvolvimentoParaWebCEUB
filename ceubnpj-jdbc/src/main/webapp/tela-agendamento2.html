@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="style3.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/a86ab39c2a.js" crossorigin="anonymous"></script>
+        <header>
+            <div class="center">
+                <div class="logo">
+                    <h1>Núcleo de Pessoa Jurídica</h1>
+                    <h3>Sistema de Agendamentos</h3>
+                </div><!--cabeçalho-->
+                <div class="menu">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="#">
+                        Sobre
+                    </a>
+                    <a href="#">
+                        Contato
+                    </a>
+                    <a href="#">
+                        Ajuda
+                    </a>
+                    <a href="login.html">
+                        Sair
+                    </a>
+              <!--      <a class="btn-menu" href="#">
+                    ID: 010101
+                    </a>   --->
+                </div><!--menu horizontal-->
+            </div><!--center-->
+        </header>
+        <section class="main">
+                <div class="center">
+                <a class="main_cta">
+                    <h2>Agendamento</h2>    
+                    <p>Para agendar preencha todas as informações corretamente
+                    </p>
+                </a>
+                </div><!--center-->
+        </section>                              
+                <form class="agendamento"  action="Agendar" method="POST">
+					
+                    
+                    Qual a área do seu processo ?<input type="select" name="área" /> <br/>  
+                    Em qual local está o seu processo?<input	type="text" name="local" /><br/>
+                    <!--Horário<input type="time" name="horario" required /><br/>-->
+                    Data e Horário<input type="datetime-local" name="horario" required /><br/>    
+                    Nome<input type="text" name="nome" required/><br/>
+                 	CPF <input	type="text" name="cpf"	required /><br	/>
+					RG	<input	type="text" name="rg"	required /><br	/>
+					Endereço	<input	type="text" name="endereco"	required /><br	/>
+                    Email <input type="email" name="email" required /> <br/>
+                    
+                    <div class="termoaceiteagendamento">
+                        <input type="checkbox" required> 
+                            <a>
+                                Declaro, para fins de obtenção de justiça gratuita, que não posso arcar com as custas e honorários de advogado sem prejuízo do meu sustento ou de minha família, nos termos do art. 5º, inciso LXXIV c/c art. 98 e seguintes do Código de Processo Civil. 
+                            </a>
+                    </div>
+					<input	type="submit" value="Gravar" required	/> <br/>
+					<br><br/>
+					
+			    </form>
+            
+               
+        </section><!--main-->
+</body>
